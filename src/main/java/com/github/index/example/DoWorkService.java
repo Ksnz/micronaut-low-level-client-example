@@ -9,7 +9,7 @@ import javax.inject.Inject;
 import java.util.Set;
 
 @Context
-public class Controller {
+public class DoWorkService {
     @Inject
     Set<UrlSpecificLowLevelClient> set;
 
