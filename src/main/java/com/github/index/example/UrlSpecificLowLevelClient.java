@@ -2,7 +2,7 @@ package com.github.index.example;
 
 import io.micronaut.http.HttpRequest;
 import io.micronaut.http.client.HttpClient;
-import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 import java.net.URI;
 
@@ -18,8 +18,8 @@ class UrlSpecificLowLevelClient {
         this.tenantId = tenantId;
     }
 
-    Flux<String> fetchPage() {
+    Mono<String> fetchPage() {
         HttpRequest<?> req = HttpRequest.GET(uri);
-        return Flux.from(justHttpClient.retrieve(req)).map(s -> tenantId + ":" + s);
+        return Mono.from(justHttpClient.retrieve(req)).map(s -> tenantId + ":" + s);
     }
 }

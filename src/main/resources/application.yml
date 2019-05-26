@@ -7,3 +7,5 @@ client:
       url: 'https://ya.ru'
     gcom:
       url: 'https://www.google.com'
+    bing:
+      url: 'https://www.bing.com'
