@@ -10,7 +10,7 @@ plugins {
 
 
 version "0.1"
-group "hello.world"
+group "com.github.index.example"
 
 repositories {
     mavenCentral()

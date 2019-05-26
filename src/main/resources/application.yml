@@ -1,6 +1,6 @@
 micronaut:
   application:
-    name: hello-world
+    name: low-level-client-example
 client:
   property:
     yaru:
