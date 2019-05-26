@@ -1,0 +1,9 @@
+micronaut:
+  application:
+    name: hello-world
+client:
+  property:
+    yaru:
+      url: 'https://ya.ru'
+    gcom:
+      url: 'https://www.google.com'
