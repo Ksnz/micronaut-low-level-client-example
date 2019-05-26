@@ -46,7 +46,7 @@ dependencies {
 
 test.classpath += configurations.developmentOnly
 
-mainClassName = "hello.world.Application"
+mainClassName = "com.github.index.example.Application"
 
 // use JUnit 5 platform
 test {

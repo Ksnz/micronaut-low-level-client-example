@@ -1,4 +1,4 @@
-package com.github.inxex.example;
+package com.github.index.example;
 
 import io.micronaut.http.HttpRequest;
 import io.micronaut.http.client.HttpClient;

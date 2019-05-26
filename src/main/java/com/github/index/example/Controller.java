@@ -1,4 +1,4 @@
-package com.github.inxex.example;
+package com.github.index.example;
 
 import io.micronaut.context.annotation.Context;
 import io.micronaut.scheduling.annotation.Scheduled;

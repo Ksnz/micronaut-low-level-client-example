@@ -1,4 +1,4 @@
-package com.github.inxex.example;
+package com.github.index.example;
 
 import io.micronaut.context.annotation.EachProperty;
 import io.micronaut.context.annotation.Parameter;
