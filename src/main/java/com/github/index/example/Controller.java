@@ -13,12 +13,12 @@ public class Controller {
     @Inject
     Set<UrlSpecificLowLevelClient> set;
 
-    @Scheduled(fixedRate = "10s")
+    @Scheduled(fixedRate = "4s")
     void doWork() {
         Flux.fromIterable(set)
                 .flatMap(UrlSpecificLowLevelClient::fetchPage)
                 .subscribeOn(Schedulers.elastic())
-                .map(s -> s.substring(0, 100))
+                .map(s -> s.substring(0, 64))
                 .subscribe(System.out::println);
     }
 }
